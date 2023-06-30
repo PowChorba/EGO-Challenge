@@ -40,7 +40,7 @@ export default function CarFilter({filter, setFilter, setSort, sort}: Props){
             }
         </div>
         <div className="w-10">
-        <select className="text-sm font-semibold text-whiteGrey" onChange={handleSelect}>
+        <select className="text-sm font-semibold text-whiteGrey max-w-[105px]" onChange={handleSelect}>
             <option value="Ordenar Por">Ordenar por</option>
             <option value="Me/Ma">De menor a mayor precio</option>
             <option value="Ma/Me">De mayor a menor precio</option>

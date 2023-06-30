@@ -52,5 +52,7 @@ export const carSelect = (data: CarsComplete[], filter: string) => {
             return 0
         })
     }
-    return data
+    else {
+        return data
+    }
 }

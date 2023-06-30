@@ -2,6 +2,7 @@
 import {AiOutlineMenu} from 'react-icons/ai'
 import Logo from '../Helpers/Logo'
 import {usePathname, useRouter} from 'next/navigation'
+import Footer from '../Footer/Footer'
 
 export default function Navbar(){
     const path = usePathname()
@@ -13,13 +14,13 @@ export default function Navbar(){
             <div className='text-left w-75'>
                 {
                     path === '/'
-                    ? <span className='text-sm font-bold py-4 px-8 border-b-2 border-[#EB0A1E] text-[#EB0A1E]'>Modelos</span>
-                    : <span className='text-sm font-bold text-navText p-4 hover:border-b-2' onClick={() => router.push('/')}>Modelos</span>
+                    ? <span className='text-sm font-bold py-4 px-8 border-b-2 border-[#EB0A1E] text-[#EB0A1E] cursor-pointer'>Modelos</span>
+                    : <span className='text-sm font-bold text-navText p-4 cursor-pointer' onClick={() => router.push('/')}>Modelos</span>
                 }
                 {
                     path !== '/'
-                    ? <span className='text-sm font-bold p-4 border-b-2 border-[#EB0A1E] text-[#EB0A1E]'>Ficha de modelo</span>
-                    : <span className='text-sm font-bold p-4 text-navText'>Ficha de modelo</span>
+                    ? <span className='text-sm font-bold p-4 border-b-2 border-[#EB0A1E] text-[#EB0A1E] cursor-pointer'>Ficha de modelo</span>
+                    : <span className='text-sm font-bold p-4 text-navText cursor-pointer'>Ficha de modelo</span>
                 }
             </div>
             <div className='flex items-center justify-center gap-2'>

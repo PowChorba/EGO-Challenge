@@ -16,16 +16,21 @@ module.exports = {
         10:'10%',
         75: '75%',
         80: '80%',
+        high: '350px'
       },
       height: {
-        200: '200px'
+        200: '200px',
+        intro: '340px',
+        footer: '50px'
       },
       backgroundColor: {
-        personalGrey: '#F7F7F7'
+        personalGrey: '#F7F7F7',
+        arrowDiv: 'rgba(255, 255, 255, 0.56)'
       },
       colors: {
         whiteGrey: '#373737',
-        navText: '#191919'
+        navText: '#191919',
+        arrow: 'rgba(71, 71, 71, 1)'
       },
       fontSize: {
         carH: '28px'

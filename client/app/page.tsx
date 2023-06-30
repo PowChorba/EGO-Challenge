@@ -2,11 +2,13 @@ import CarSection from '@/components/Cars/CarSection'
 import Navbar from '@/components/Navbar/Navbar'
 import Image from 'next/image'
 import { CarsGet } from './service/app.service'
+import Footer from '@/components/Footer/Footer'
 
 export default async function Home() {
   const data = await CarsGet()
 
   return (
+    <>
     <main>
       <Navbar/>
       <div className='w-75 text-left m-auto h-200 flex items-center'>
@@ -16,5 +18,7 @@ export default async function Home() {
         <CarSection data={data}/>
       </section>
     </main>
+    <Footer/>
+    </>
   )
 }
