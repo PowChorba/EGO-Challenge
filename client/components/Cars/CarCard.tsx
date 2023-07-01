@@ -12,10 +12,10 @@ export default function CarCard({ id, name, year, price, photo }: CarCardType) {
         <span>|</span>
         <span className="text-sm">{money(price)}</span>
       </div>
-      <div className="min-h-[225px] flex flex-col justify-center">
+      <div className="min-h-carImg flex flex-col justify-center">
         <Image src={photo} alt={name} width={300} height={125}/>
       </div>
-      <Link href={`/${id}`} className="bg-navText text-white w-[152px] h-[34px] text-center flex justify-center items-center rounded-full text-sm">Ver modelo</Link>
+      <Link href={`/${id}`} className="bg-navText text-white w-[152px] h-8 text-center flex justify-center items-center rounded-full text-sm">Ver modelo</Link>
     </div>
   );
 }

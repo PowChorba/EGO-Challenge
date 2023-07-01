@@ -21,7 +21,11 @@ module.exports = {
       height: {
         200: '200px',
         intro: '340px',
-        footer: '50px'
+        footer: '50px',
+        menu: '858px'
+      },
+      minHeight: {
+        carImg: '225px',
       },
       backgroundColor: {
         personalGrey: '#F7F7F7',

@@ -1,15 +1,17 @@
 'use client'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 import Logo from '../Helpers/Logo'
 import {usePathname, useRouter} from 'next/navigation'
-import Footer from '../Footer/Footer'
+import {useState} from 'react'
+import Menu from './Menu'
 
 export default function Navbar(){
     const path = usePathname()
     const router = useRouter()
+    const [menu, setMenu] = useState(false)
 
     return(
-        <nav className="flex justify-around items-center gap-4 h-[70px] px-6 border-b-2">
+        <nav className="flex justify-around items-center gap-4 h-[70px] px-6 border-b-2 relative">
             <Logo/>
             <div className='text-left w-75'>
                 {
@@ -24,8 +26,18 @@ export default function Navbar(){
                 }
             </div>
             <div className='flex items-center justify-center gap-2'>
-                <span>Menu</span>
-                <AiOutlineMenu className='w-6 h-5'/>
+                {
+                    menu 
+                    ? <><span>Cerrar</span>
+                    <AiOutlineClose className='w-6 h-5 cursor-pointer' onClick={() => setMenu(false)}/> </>
+                    : <><span>Menu</span>
+                    <AiOutlineMenu className='w-6 h-5 cursor-pointer' onClick={() => setMenu(true)}/> </>
+                }
             </div>
+                {
+                    menu && <div className='absolute top-[70px] right-8 bg-white h-[858px] w-[390px] p-12 flex flex-col gap-6'>
+                    <Menu/>
+                </div>
+                }
         </nav>)
 }
