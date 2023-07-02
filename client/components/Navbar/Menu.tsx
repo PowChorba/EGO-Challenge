@@ -1,9 +1,10 @@
+import Link from 'next/link'
 
 export default function Menu(){
     return (
         <>
         <div className="h-32 flex flex-col justify-center text-right gap-4">
-            <span>Modelos</span>
+            <span><Link href='/'>Modelos</Link></span>
             <span>Servicios y Accesorias</span>
             <span>Financiación</span>
             <span>Reviews y Comunidad</span>

@@ -31,6 +31,7 @@ module.exports = {
       },
       minHeight: {
         carImg: '225px',
+        sectionCar: '850px'
       },
       backgroundColor: {
         personalGrey: '#F7F7F7',
@@ -52,6 +53,7 @@ module.exports = {
       maxWidth: {
         carDivW: '268px'
       },
+      
     },
   },
   plugins: [],
