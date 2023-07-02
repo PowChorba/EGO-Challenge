@@ -42,13 +42,14 @@ module.exports = {
         whiteGrey: '#373737',
         navText: '#191919',
         arrow: 'rgba(71, 71, 71, 1)',
-        tituloResponsive: 'rgba(25, 25, 25, 1)'
+        tituloResponsive: 'rgba(25, 25, 25, 1)',
+        titleHover: 'rgba(235, 10, 30, 1)'
       },
       fontSize: {
         carH: '28px'
       },
       margin: {
-        carHigh: '100px'
+        carHigh: '125px'
       },
       maxWidth: {
         carDivW: '268px'

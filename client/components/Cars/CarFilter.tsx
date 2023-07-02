@@ -43,9 +43,8 @@ export default function CarFilter({filter, setFilter, setSort, sort}: Props){
                 : <span className="px-8 text-sm cursor-pointer" onClick={() => setFilter('suvs')}>SUVs y Crossovers</span>
             }
         </div>
-        {/* <div className="w-10 max-sm:w-[50%]"> */}
         <div className="hidden max-sm:inline">
-            <select className="text-sm font-semibold text-whiteGrey max-w-[105px]" onChange={handleSelectFilter}>
+            <select className="text-sm font-semibold text-whiteGrey max-w-[105px] bg-white" onChange={handleSelectFilter}>
                 <option value="todos">Todos</option>
                 <option value="autos">Autos</option>
                 <option value="pickups">Pickups y Comerciales</option>
@@ -53,8 +52,7 @@ export default function CarFilter({filter, setFilter, setSort, sort}: Props){
             </select>
         </div>
         <div>
-        {/* <div className="w-10 max-sm:w-[50%] max-sm:"> */}
-        <select className="text-sm font-semibold text-whiteGrey max-w-[105px]" onChange={handleSelect}>
+        <select className="text-sm font-semibold text-whiteGrey max-w-[105px] bg-white" onChange={handleSelect}>
             <option value="Ordenar Por">Ordenar por</option>
             <option value="Me/Ma">De menor a mayor precio</option>
             <option value="Ma/Me">De mayor a menor precio</option>

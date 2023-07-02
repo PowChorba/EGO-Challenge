@@ -9,7 +9,7 @@ export default async function CarDetail({params}: any){
     return(
         <main>
             <Navbar/>
-            <section className="w-full m-auto">
+            <section className="w-full m-auto flex flex-col gap-4">
                 <CarDetailCard data={data}/>
             </section>
         </main>

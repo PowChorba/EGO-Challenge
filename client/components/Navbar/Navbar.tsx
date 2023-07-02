@@ -35,7 +35,7 @@ export default function Navbar(){
                 }
             </div>
                 {
-                    menu && <div className='absolute top-[70px] right-8 bg-white h-menu w-menuW p-12 flex flex-col gap-10 text-[20px] max-sm:w-full max-sm:right-0'>
+                    menu && <div className='absolute top-[70px] right-8 bg-white h-menu w-menuW p-12 flex flex-col gap-10 text-[20px] max-sm:w-full max-sm:right-0 z-10'>
                     <Menu/>
                     </div>
                 }
