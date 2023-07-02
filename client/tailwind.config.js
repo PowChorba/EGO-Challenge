@@ -16,29 +16,42 @@ module.exports = {
         10:'10%',
         75: '75%',
         80: '80%',
-        high: '350px'
+        90: '90%',
+        high: '350px',
+        menuW: '390px'
       },
       height: {
+        navH: '70px',
         200: '200px',
         intro: '340px',
         footer: '50px',
-        menu: '858px'
+        menu: '858px',
+        featureDiv: '410px',
+        carDiv: '292px',
       },
       minHeight: {
         carImg: '225px',
       },
       backgroundColor: {
         personalGrey: '#F7F7F7',
-        arrowDiv: 'rgba(255, 255, 255, 0.56)'
+        arrowDiv: 'rgba(255, 255, 255, 0.56)',
+        menu: 'rgba(239, 238, 239, 1)'
       },
       colors: {
         whiteGrey: '#373737',
         navText: '#191919',
-        arrow: 'rgba(71, 71, 71, 1)'
+        arrow: 'rgba(71, 71, 71, 1)',
+        tituloResponsive: 'rgba(25, 25, 25, 1)'
       },
       fontSize: {
         carH: '28px'
-      }
+      },
+      margin: {
+        carHigh: '100px'
+      },
+      maxWidth: {
+        carDivW: '268px'
+      },
     },
   },
   plugins: [],

@@ -11,9 +11,9 @@ export default function Navbar(){
     const [menu, setMenu] = useState(false)
 
     return(
-        <nav className="flex justify-around items-center gap-4 h-[70px] px-6 border-b-2 relative">
+        <nav className="flex justify-around items-center gap-4 h-navH px-6 border-b-2 relative max-sm:justify-between">
             <Logo/>
-            <div className='text-left w-75'>
+            <div className='text-left w-75 max-sm:hidden'>
                 {
                     path === '/'
                     ? <span className='text-sm font-bold py-4 px-8 border-b-2 border-[#EB0A1E] text-[#EB0A1E] cursor-pointer'>Modelos</span>
@@ -28,16 +28,16 @@ export default function Navbar(){
             <div className='flex items-center justify-center gap-2'>
                 {
                     menu 
-                    ? <><span>Cerrar</span>
+                    ? <><span className='text-whiteGrey max-sm:hidden'>Cerrar</span>
                     <AiOutlineClose className='w-6 h-5 cursor-pointer' onClick={() => setMenu(false)}/> </>
-                    : <><span>Menu</span>
+                    : <><span className='text-whiteGrey max-sm:hidden'>Menu</span>
                     <AiOutlineMenu className='w-6 h-5 cursor-pointer' onClick={() => setMenu(true)}/> </>
                 }
             </div>
                 {
-                    menu && <div className='absolute top-[70px] right-8 bg-white h-[858px] w-[390px] p-12 flex flex-col gap-6'>
+                    menu && <div className='absolute top-[70px] right-8 bg-white h-menu w-menuW p-12 flex flex-col gap-10 text-[20px] max-sm:w-full max-sm:right-0'>
                     <Menu/>
-                </div>
+                    </div>
                 }
         </nav>)
 }

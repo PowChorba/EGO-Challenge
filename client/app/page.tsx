@@ -11,14 +11,14 @@ export default async function Home() {
     <>
     <main>
       <Navbar/>
-      <div className='w-75 text-left m-auto h-200 flex items-center'>
-        <span className='font-bold text-5xl text-whiteGrey'>Descubri todos los modelos</span>
+      <div className='w-75 text-left m-auto h-200 flex items-center max-sm:w-90'>
+        <h1 className='font-bold text-5xl text-whiteGrey max-sm:text-4xl max-sm:text-tituloResponsive'>Descubri todos los modelos</h1>
       </div>
-      <section className='w-75 text-left m-auto'>
+      <section className='w-75 text-left m-auto max-sm:w-90'>
         <CarSection data={data}/>
       </section>
-    </main>
     <Footer/>
+    </main>
     </>
   )
 }

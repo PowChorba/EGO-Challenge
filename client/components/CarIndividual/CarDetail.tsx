@@ -13,33 +13,24 @@ interface Props {
 export default function CarDetailCard({ data }: Props) {
   return (
     <>
-      <article className="grid grid-cols-2 place-items-center gap-4 h-intro mt-8 mb-[100px] w-75 mx-auto">
+      <article className="grid grid-cols-2 place-items-center gap-4 h-intro mt-8 mb-carHigh w-75 mx-auto max-sm:grid-cols-1 max-sm:w-90">
         <Image src={data.photo} alt={data.name} width={600} height={600} />
-        <div>
-          {/* <div className="flex justify-center items-center text-left"> */}
-          <h4 className="text-xl text-whiteGrey">
+        <div className="max-sm:flex max-sm:flex-col max-sm:gap-2">
+          <h4 className="text-xl text-whiteGrey font-semibold max-sm:text-base">
             {data.name} {data.segment}
           </h4>
-          {/* </div> */}
-          <p className="text-[50px] text-whiteGrey">{data.title}</p>
+          <p className="text-5xl font-semibold text-whiteGrey max-sm:text-4xl max-sm:">{data.title}</p>
           <p className="text-whiteGrey">{deleteTag(data.description)}</p>
         </div>
       </article>
-      <article className="w-full h-[410px] flex justify-center items-center gap-4 bg-personalGrey">
-        {/* <div className="w-[45px] h-[150px] bg-arrowDiv flex justify-center items-center"> */}
-          {/* <MdKeyboardArrowLeft className="text-4xl text-arrow"/> */}
-        {/* </div> */}
+      <article className="w-full h-featureDiv flex justify-center items-center gap-4 bg-personalGrey">
         {
           data.model_highlights.map(e => {
             return <CarFeature key={e.title} title={e.title} content={e.content} image={e.image} />
           })
         }
-        {/* <div className="w-[45px] h-[150px] bg-arrowDiv flex justify-center items-center"> */}
-        {/* <MdKeyboardArrowRight className="text-4xl text-arrow"/> */}
-        {/* </div> */}
-
       </article>
-      <article className="w-75 grid grid-cols-2 mx-auto gap-4 place-items-center my-[100px]">
+      <article className="w-75 grid grid-cols-2 mx-auto gap-4 place-items-center my-carHigh max-sm:w-90 max-sm:grid-cols-1 max-sm:my-[30px]">
         <CarHighlights data={data.model_features}/>
       </article>
       <Footer/>
@@ -47,3 +38,10 @@ export default function CarDetailCard({ data }: Props) {
     </>
   );
 }
+
+{/* <div className="w-[45px] h-[150px] bg-arrowDiv flex justify-center items-center"> */}
+  {/* <MdKeyboardArrowLeft className="text-4xl text-arrow"/> */}
+{/* </div> */}
+{/* <div className="w-[45px] h-[150px] bg-arrowDiv flex justify-center items-center"> */}
+{/* <MdKeyboardArrowRight className="text-4xl text-arrow"/> */}
+{/* </div> */}
