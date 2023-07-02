@@ -5,7 +5,7 @@
 <p>A continuación se detallan los pasos necesarios para levantar el proyecto en un servidor local:</p>
 
 <p>1. Accede a la carpeta client ejecutando el siguiente comando en la terminal:</p>
-![image](https://github.com/PowChorba/EGO-Challenge/assets/101152834/96a1db9d-366f-459a-bb44-913d266ba650)
+<img src="![image](https://github.com/PowChorba/EGO-Challenge/assets/101152834/96a1db9d-366f-459a-bb44-913d266ba650)"/>
 
 <p>2. Una vez dentro de la carpeta, instala las dependencias requeridas. Puedes elegir entre los siguientes gestores de paquetes: npm, pnpm o yarn. A continuación se muestra el comando utilizando npm: </p>
 ![image](https://github.com/PowChorba/EGO-Challenge/assets/101152834/347d7f93-8809-4c8f-ae84-86e1eec03444)
